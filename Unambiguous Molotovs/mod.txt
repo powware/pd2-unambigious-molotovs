@@ -1,6 +1,6 @@
 {
 	"blt_version" : 2,
-    "name" : "Unambigious Moltovs",
+    "name" : "Unambiguous Moltovs",
     "description" : "Shows damage zones of environmental fire.",
     "author" : "powware",
     "contact" : "https://github.com/powware",
