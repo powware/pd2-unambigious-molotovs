@@ -1,0 +1,15 @@
+{
+	"blt_version" : 2,
+    "name" : "Unambigious Moltovs",
+    "description" : "Shows damage zones of environmental fire.",
+    "author" : "powware",
+    "contact" : "https://github.com/powware",
+    "version" : "1.0",
+	"color" : "1 0.2 0",
+	"hooks" : [
+		{ 	
+			"hook_id" : "lib/units/environment/environmentfire", 
+			"script_path" : "main.lua"
+		}
+	]		
+}
