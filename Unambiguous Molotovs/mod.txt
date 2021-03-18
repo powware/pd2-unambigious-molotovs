@@ -6,6 +6,14 @@
     "contact" : "https://github.com/powware",
     "version" : "1.0",
 	"color" : "1 0.2 0",
+	"updates" : [
+		{
+			"identifier" : "UnambiguousMoltovs",
+			"host" : {
+				"meta" : "https://github.com/powware/pd2-unambiguous-molotovs/releases/download/refs%2Fheads%2Fmaster/meta.json"
+			}
+		}
+	],
 	"hooks" : [
 		{ 	
 			"hook_id" : "lib/units/environment/environmentfire", 
