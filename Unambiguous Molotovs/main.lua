@@ -2,11 +2,16 @@ UnambiguousMolotovs = UnambiguousMolotovs or {}
 UnambiguousMolotovs.color = Color(0.1, 1, 0.2, 0)
 UnambiguousMolotovs.damage_color = Color(0.3, 1, 0.2, 0)
 UnambiguousMolotovs.damage_indicator_duration = 0.15
+
 Hooks:PostHook(
     EnvironmentFire,
     "update",
     "UnambiguousMolotovs_EnvironmentFire_update",
     function(self, unit, t, dt)
+        if self._burn_duration <= 0 then
+            return
+        end
+
         for index, damage_effect_entry in pairs(self._molotov_damage_effect_table) do
             if damage_effect_entry.body ~= nil then
                 local damage_range = self._range * (index == 1 and 1.5 or 1)
